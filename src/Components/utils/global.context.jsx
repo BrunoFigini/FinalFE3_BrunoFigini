@@ -27,6 +27,7 @@ export const reducer = (state, action) => {
 const localFavs = JSON.parse(localStorage.getItem("favs"));
 const initialFavState = localFavs ? localFavs : [];
 
+
 const initialState = {
 	chars: [],
 	char: {},

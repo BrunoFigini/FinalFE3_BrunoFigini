@@ -1,12 +1,14 @@
-import React from 'react'
+import React from "react";
+import { useCharStates } from "./utils/global.context";
 
 const Footer = () => {
-  return (
-    <footer>
-        <p>Powered by</p>
-        <img src="./img/DH.png" alt='DH-logo' />
-    </footer>
-  )
-}
+	const { state } = useCharStates();
+	return (
+		<footer className={state.theme === "light" ? "light" : "dark"}>
+			<p>Final realizado por Bruno Figini - CTD Digital House</p>
+			<img src="" alt="DH-logo" />
+		</footer>
+	);
+};
 
-export default Footer
+export default Footer;

@@ -21,7 +21,7 @@
 
 .dark{
   color: rgba(255, 255, 255, 0.87);
-	background-color: #242424; */
+	background-color: #242424; 
 }
 
 a {
@@ -34,7 +34,11 @@ a:hover {
 }
 
 .card {
-	display: grid;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+
+	width: auto; /* Ancho de la card, ajusta según tus necesidades */
+	margin: 10px;
 }
 
 body {
@@ -77,15 +81,14 @@ button:focus-visible {
 	outline: 4px auto -webkit-focus-ring-color;
 }
 
-/* @media (prefers-color-scheme: light) {
-	:root {
-		color: #213547;
-		background-color: #ffffff;
-	}
-	a:hover {
-		color: #747bff;
-	}
-	button {
-		background-color: #f9f9f9;
-	}
-} */
+footer.light{
+  background-color: #242424;
+}
+
+footer.dark{
+  background-color: #6e6e6e;
+}
+
+img {
+	width: 300px;
+}

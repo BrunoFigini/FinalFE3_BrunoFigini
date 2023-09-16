@@ -2,10 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useCharStates } from "./utils/global.context";
 
+
 const Card = ({ char }) => {
 
 	const { dispatch } = useCharStates();
-	const addFav = () => {
+	const toggleFav = () => {
 		dispatch({ type: "TOGGLE_FAV", payload: char });
 	};
 
@@ -20,11 +21,11 @@ const Card = ({ char }) => {
 			<Link to={"/dentist/" + char.id}>
 				<img
 					alt="Silueta de una doctora"
-					src="/bruno_figini_final/public/images/doctor.jpg"
+					src="../../public/images/doctor.jpg"
 				/>
 				<h3>{char.name}</h3>
 			</Link>
-			<button onClick={addFav} className="favButton">
+			<button onClick={toggleFav} className="favButton">
 				⭐
 			</button>
 		</div>
