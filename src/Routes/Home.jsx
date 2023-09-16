@@ -9,8 +9,8 @@ const Home = () => {
 	const { state } = useCharStates();
 
 	return (
-		<>
-			<main className={state.theme === "light" ? "light" : "dark"}>
+		<div className={state.theme === "light" ? "light" : "dark"}>
+			<main>
 				<h1>Home</h1>
 				<div>
 					{state.chars.map((char) => (
@@ -18,8 +18,8 @@ const Home = () => {
 					))}
 				</div>
 			</main>
-      <Footer></Footer>
-		</>
+			<Footer></Footer>
+		</div>
 	);
 };
 

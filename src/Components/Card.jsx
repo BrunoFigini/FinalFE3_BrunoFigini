@@ -21,9 +21,11 @@ const Card = ({ char }) => {
 			<Link to={"/dentist/" + char.id}>
 				<img
 					alt="Silueta de una doctora"
-					src="../../public/images/doctor.jpg"
+					src="/images/doctor.jpg"
 				/>
+				<h4>Id {char.id}</h4>
 				<h3>{char.name}</h3>
+				<h4>{char.username}</h4>
 			</Link>
 			<button onClick={toggleFav} className="favButton">
 				⭐
